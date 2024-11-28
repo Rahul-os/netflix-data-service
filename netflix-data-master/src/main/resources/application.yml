@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: netflix-data-service
+    
+  data:
+    mongodb:
+      database: NetflixAssignment
+      host: localhost
+      port: 27017
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB      # without these property i faced max file size limit exceeded 1048576 bytes.
+server:
+  port: 2514
+
+#logging:
+#  level:
+#    org:
+#      springframework: DEBUG  // run application in debug mode to get more detailed info.
