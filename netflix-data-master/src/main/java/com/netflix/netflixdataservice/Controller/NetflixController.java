@@ -87,6 +87,7 @@ public class NetflixController {
 //		// toget actual record size returned in that page, we can use another method getNumberOfElements()
 //	}
 
+
 	@GetMapping("/getAllRecords")
 	public PaginationResponse<Page<NetflixData>> getRecordsWithPagintionAndSorting(@RequestParam int offset, @RequestParam int pageSize, @RequestParam String field) {
 		Page<NetflixData> records = service.getRecordsWithPaginationAndSorting(offset, pageSize, field);  // "field" is the column in the schema based on which sorting should occur.
