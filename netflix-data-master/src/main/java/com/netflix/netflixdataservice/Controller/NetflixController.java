@@ -80,7 +80,7 @@ public class NetflixController {
 	}
 
 //	@GetMapping("/getAllRecords")
-//	public PaginationResponse<Page<NetflixData>> getRecordsWithPagination(@RequestParam int offset, @RequestParam int numberOfRecords)
+//	public PaginationResponse<Page<NetflixData>> getRecordsWithPagination(@RequestParam int offset,  @RequestParam int numberOfRecords)
 //	{
 //		Page<NetflixData> records = service.getRecordsWithPagination(offset, numberOfRecords);
 //		return new PaginationResponse<>(records.getNumberOfElements(), records);   // records.getSize() will give us the pageSize here numberOfRecords per each page, it doesnt give actual record size that is returned
