@@ -92,6 +92,7 @@ public class NetflixController {
 		Page<NetflixData> records = service.getRecordsWithPaginationAndSorting(offset, pageSize, field);  // "field" is the column in the schema based on which sorting should occur.
 		return new PaginationResponse<>(records.getNumberOfElements(), records);
 	}
+
 }
 
 
